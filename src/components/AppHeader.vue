@@ -2,7 +2,6 @@
   <div class="ui secondary pointing menu">
     <a href="/" class="active item">Image Storage</a>
     <div class="right menu">
-      {{isLoggedIn}}
       <div v-if="isLoggedIn" class="horizontal">
         <a href="" class="item">Galleries</a>
         <a href="" class="item">Upload</a>
