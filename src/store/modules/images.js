@@ -6,14 +6,14 @@ const state = {
 };
 
 const getters = {
-  allimages: state => state.images,
+  allImages: state => state.images,
 };
 
 const actions = {
   async fetchImages({ rootState, commit }) {
     const { token } = rootState.auth;
     const response = await api.fetchImages(token);
-    commit('setImages', response.data.data)
+    commit('setImages', response.data.data);
   }
 };
 
